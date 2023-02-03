@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <section class="container p-5 ">
+        <h1 class="text-danger display-3 fw-bold mb-2">Calculator</h1>
+        <div class="calculator card d-block text-center">
+
+            <input type="text" id="result" class="calculator-screen z-depth-1" value="" disabled />
+        
+            <div class="calculator-keys">
+        
+            <button type="button" class="operator btn btn-info" value="+" onclick="insertNumber('+')">+</button>
+            <button type="button" class="operator btn btn-info" value="-"onclick="insertNumber('-')">-</button>
+            <button type="button" class="operator btn btn-info" value="*"onclick="insertNumber('*')">&times;</button>
+            <button type="button" class="operator btn btn-info" value="/"onclick="insertNumber('/')">&divide;</button>
+        
+            <button type="button" value="7" class="btn btn-secondary waves-effect" onclick="insertNumber(7)">7</button>
+            <button type="button" value="8" class="btn btn-secondary waves-effect" onclick="insertNumber(8)">8</button>
+            <button type="button" value="9" class="btn btn-secondary waves-effect" onclick="insertNumber(9)">9</button>
+        
+        
+            <button type="button" value="4" class="btn btn-secondary waves-effect" onclick="insertNumber(4)">4</button>
+            <button type="button" value="5" class="btn btn-secondary waves-effect" onclick="insertNumber(5)">5</button>
+            <button type="button" value="6" class="btn btn-secondary waves-effect" onclick="insertNumber(6)">6</button>
+        
+        
+            <button type="button" value="1" class="btn btn-secondary waves-effect" onclick="insertNumber(1)">1</button>
+            <button type="button" value="2" class="btn btn-secondary waves-effect" onclick="insertNumber(2)">2</button>
+            <button type="button" value="3" class="btn btn-secondary waves-effect" onclick="insertNumber(3)">3</button>
+        
+        
+            <button type="button" value="0" class="btn btn-secondary waves-effect" onclick="insertNumber(0)">0</button>
+            <button type="button" class="decimal function btn btn-primary" value="."
+            onclick="insertNumber('.')">.</button>
+            <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" onclick="clearform()">AC</button>
+        
+            <button type="button" class="equal-sign operator btn btn-secondary" value="=" onclick="calc()">=</button>
+        
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="index.js"></script>
+    <script src="assets/js/jquery.3.6.3.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
